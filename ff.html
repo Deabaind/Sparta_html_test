@@ -5,23 +5,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>푸드파이터</title>
+    <!-- JQuery 사용 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script defer>
+        // foodcourt 버튼 클릭시 이동
+        $(function () {
+            $("#home_btn").click(async function () {
+                location.href = "https://www.google.com/";
+            });
+        })
+        // 한식 버튼 클릭시 이동
+        $(function () {
+            $("#home_K").click(async function () {
+                location.href = "https://www.google.com/";
+            });
+        })
+        // 일식 버튼 클릭시 이동
+        $(function () {
+            $("#home_J").click(async function () {
+                location.href = "https://www.google.com/";
+            });
+        })
+        // 중식 버튼 클릭시 이동
+        $(function () {
+            $("#home_C").click(async function () {
+                location.href = "https://www.google.com/";
+            });
+        })
+        // 양식 버튼 클릭시 이동
+        $(function () {
+            $("#home_Y").click(async function () {
+                location.href = "https://www.google.com/";
+            });
+        })
+    </script>
     <style>
+        /* 홈 문자 상태 */
+        .home_text {
+            color: coral;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
 
+        /* 홈 문자에 마우스를 올린 경우 상태 */
+        .home_K:hover .home_text,
+        .home_J:hover .home_text,
+        .home_C:hover .home_text,
+        .home_Y:hover .home_text {
+            color: blue;
+        }
 
+        .header {
+            background-size: cover;
+            background-image:
+                url('https://images.unsplash.com/photo-1531697218799-ed0ae884c6c8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2080&q=80');
+            background-position: right;
+            height: 600px;
+            display: flex;
+            flex-direction: column;
+        }
     </style>
 </head>
 
 <body>
-    <div style="margin-left: 50px;">
-        <button type="button" style="display: inline-flex; align-items: center; background-color: transparent; border: none; cursor: pointer;">
-                <img class="home_img" style="width: 50px; height: 50px; margin-right: 10px;"
-                    src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/food.png"
-                    alt="foodcourt logo" />
-                <span type="button" style="font-size: 20px; color: coral;"
-                    class="home_text">foodcourt</span>
+    <!-- 좌측 상단 홈 버튼 -->
+    <div style="margin-left: 50px; display: flex; align-items: center;">
+        <!-- 이미지, foodcourt 버튼 -->
+        <button id="home_btn" type="button"
+            style="display: inline-flex; align-items: center; background-color: transparent; border: none; cursor: pointer;">
+            <img class="home_img" style="width: 50px; height: 50px; margin-right: 10px;"
+                src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/food.png"
+                alt="foodcourt logo" />
+            <span type="button" style="font-size: 20px; color: coral;" class="home_text">foodcourt</span>
+        </button>
+        <!-- 한식 버튼 -->
+        <button id="home_K" type="button" class="home_K"
+            style="display: inline-flex; background-color: transparent; border: none; cursor: pointer; margin-left: 10px;">
+            <span class="home_text">한식</span>
+        </button>
+        <!-- 일식 버튼 -->
+        <button id="home_J" type="button" class="home_J"
+            style="display: inline-flex; background-color: transparent; border: none; cursor: pointer; margin-left: 10px;">
+            <span class="home_text">일식</span>
+        </button>
+        <!-- 중식 버튼 -->
+        <button id="home_C" type="button" class="home_C"
+            style="display: inline-flex; background-color: transparent; border: none; cursor: pointer; margin-left: 10px;">
+            <span class="home_text">중식</span>
+        </button>
+        <!-- 양식 버튼 -->
+        <button id="home_Y" type="button" class="home_Y"
+            style="display: inline-flex; background-color: transparent; border: none; cursor: pointer; margin-left: 10px; ">
+            <span class="home_text">양식</span>
         </button>
     </div>
-
+    <div class="p-5 mb-4 bg-body-tertiary rounded-3">
+        <div class="header">
+            <h1 class="display-5 fw-bold">QWER</h1>
+            <p class="col-md-8 fs-4">ASDF</p>
+        </div>
+    </div>
 
 </body>
 
