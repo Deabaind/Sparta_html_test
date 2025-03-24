@@ -57,5 +57,3 @@ sparta_food_fighter.png = 목표(과제) 사진
   }
 } | 200: 정상 수정 |
 | 일정 삭제 | DELETE | /schedules/{schedulesid} | 요청 param | - | 200: 정상 삭제 |
-
-![Blank diagram (3).png](Blank_diagram_(3).png)
