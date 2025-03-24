@@ -2,7 +2,8 @@
 sparta_foodfighter.html = 5주차 과제
 ff.html = 과제를 보고 처음부터 만들어보는 파일
 sparta_food_fighter.png = 목표(과제) 사진
-[Calendar API 명세서, ERD 1c0f7369191680129ec6e609669300b4.md](https://github.com/user-attachments/files/19429406/Calendar.API.ERD.1c0f7369191680129ec6e609669300b4.md)
+
+
 
 # Calendar API 명세서, ERD
 
@@ -57,3 +58,5 @@ sparta_food_fighter.png = 목표(과제) 사진
   }
 } | 200: 정상 수정 |
 | 일정 삭제 | DELETE | /schedules/{schedulesid} | 요청 param | - | 200: 정상 삭제 |
+
+![Blank diagram (3).png](Blank_diagram_(3).png)
